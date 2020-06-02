@@ -1,0 +1,22 @@
+{
+ {
+   name : "Zoom"
+   packageName : "us.zoom.videomeetings"
+   alternative: {
+     {
+       altName : "Cisco WebEx",
+       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+     }
+   }
+ },
+{
+   name : "Telegram"
+   packageName : "org.telegram.messenger"
+   alternative: {
+     {
+       altName : "Cisco WebEx",
+       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+     }
+   }
+ }
+}
