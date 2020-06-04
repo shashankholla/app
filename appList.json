@@ -1,118 +1,118 @@
 [
    
 {
-   name : "Uc browser",
-   packageName : "com.UCMobile.intl",
-   alternative:
+   "name" : "Uc browser",
+   "packageName" : "com.UCMobile.intl",
+   "alternative":
      [{
-       altName : "JioBrowser",
-       link : "https://play.google.com/store/apps/details?id=com.jio.web&hl=en"
+       "altName" : "JioBrowser",
+       "link" : "https://play.google.com/store/apps/details?id=com.jio.web&hl=en"
      }]
    
  },
   
 {
-   name : "TikTok",
-   packageName : "com.zhiliaoapp.musically",
-   alternative:
+   "name" : "TikTok",
+   "packageName" : "com.zhiliaoapp.musically",
+   "alternative":
      [{
-       altName : "ShareChat",
-       link : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
+       "altName" : "ShareChat",
+       "link" : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
      }]
    
  },
 {
-   name : "SHAREit",
-   packageName : com.lenovo.anyshare.gps",
-   alternative:
+   "name" : "SHAREit",
+   "packageName" : "com.lenovo.anyshare.gps",
+   "alternative":
      [{
-       altName : "JioSwitch",
-       link : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
+       "altName" : "JioSwitch",
+       "link" : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
      }]
    
  },
  
 {
-   name : "AliExpress",
-   packageName : "com.alibaba.aliexpresshd",
-   alternative:
+   "name" : "AliExpress",
+   "packageName" : "com.alibaba.aliexpresshd",
+   "alternative":
      [{
-       altName : "Flipkart",
-       link : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
+       "altName" : "Flipkart",
+       "link" : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
      }]
    
  }
 ,
 {
-   name : "Helo",
-   packageName : "app.buzz.share",
-   alternative:
+   "name" : "Helo",
+   "packageName" : "app.buzz.share",
+   "alternative":
      [{
-       altName : "ShareChat",
-       link : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
+       "altName" : "ShareChat",
+       "link" : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
      }]
    
  }
 ,
 {
-   name : "Turbo VPN",
-   packageName : "free.vpn.unblock.proxy.turbovpn",
-   alternative:
+   "name" : "Turbo VPN",	
+   "packageName" : "free.vpn.unblock.proxy.turbovpn",
+   "alternative":
      [{
-       altName : "ProtonVPN",
-       link : "https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en"
+       "altName" : "ProtonVPN",
+       "link" : "https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en"
      }]
    
  }
 ,
 {
-   name : "SHEIN",
-   packageName : "com.zzkko",
-   alternative:
+   "name" : "SHEIN",
+   "packageName" : "com.zzkko",
+   "alternative":
      [{
-       altName : "Tata CLiQ",
-       link : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
+       "altName" : "Tata CLiQ",
+       "link" : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
      }]
    
  }
 ,
 {
-   name : "BeautyPlus",
-   packageName : "com.commsource.beautyplus",
-   alternative:
+   "name" : "BeautyPlus",
+   "packageName" : "com.commsource.beautyplus",
+   "alternative":
      [{
-       altName : "PicsArt",
-       link : "https://play.google.com/store/apps/details?id=com.picsart.studio&hl=en"
+       "altName" : "PicsArt",
+       "link" : "https://play.google.com/store/apps/details?id=com.picsart.studio&hl=en"
      }]
    
  }
 ,
 {
-   name : "Xender",
-   packageName : "cn.xender",
-   alternative:
+   "name" : "Xender",
+   "packageName" : "cn.xender",
+   "alternative":
      [{
-        altName : "JioSwitch",
-       link : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
+        "altName" : "JioSwitch",
+       "link" : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
      }]
    
  },
   {
-   name : "Club Factory",
-   packageName : "club.fromfactory",
-   alternative: [{
+   "name" : "Club Factory",
+   "packageName" : "club.fromfactory",
+   "alternative": [{
 
-    altName : "Myntra",
-       link : "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en"
+    "altName" : "Myntra",
+       "link" : "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en"
      },
  
     {
-         altName : "Tata CLiQ",
-       link : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
+         "altName" : "Tata CLiQ",
+       "link" : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
      },
    {
-      altName : "Flipkart",
-       link : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
+      "altName" : "Flipkart",
+       "link" : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
      }]
    }
 
