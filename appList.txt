@@ -1,0 +1,154 @@
+[
+ {
+   name : "Zoom",
+   packageName : "us.zoom.videomeetings",
+   alternative: [{
+   
+       altName : "Cisco WebEx",
+       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+     }]
+   }
+ ,
+{
+   name : "Uc browser",
+   packageName : "com.UCMobile.intl",
+   alternative:
+     [{
+       altName : "JioBrowser",
+       link : "https://play.google.com/store/apps/details?id=com.jio.web&hl=en"
+     }]
+   
+ },
+  {
+   name : "CamScanner",
+   packageName : "com.intsig.camscanner",
+   alternative: [{
+   
+       altName : "Adobe Scan",
+       link : "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en_IN"
+     },
+ 
+    {
+       altName : "Scanner App To PDF - TapScanner",
+       link : "https://play.google.com/store/apps/details?id=pdf.tap.scanner&hl=en_IN"
+     },
+   {
+       altName : "Microsoft Office Lens",
+       link : "https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=en_IN"
+     }]
+   },
+{
+   name : "TikTok",
+   packageName : "com.zhiliaoapp.musically",
+   alternative:
+     [{
+       altName : "ShareChat",
+       link : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
+     }]
+   
+ },
+{
+   name : "SHAREit",
+   packageName : com.lenovo.anyshare.gps",
+   alternative:
+     [{
+       altName : "JioSwitch",
+       link : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
+     }]
+   
+ },
+{
+   name : "WPS Office",
+   packageName : "cn.wps.moffice_eng",
+   alternative:
+     [{
+       altName : "Microsoft Office",
+       link : "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en"
+     }]
+   
+ },
+{
+   name : "AliExpress",
+   packageName : "com.alibaba.aliexpresshd",
+   alternative:
+     [{
+       altName : "Flipkart",
+       link : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
+     }]
+   
+ }
+,
+{
+   name : "Helo",
+   packageName : "app.buzz.share",
+   alternative:
+     [{
+       altName : "ShareChat",
+       link : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
+     }]
+   
+ }
+,
+{
+   name : "Turbo VPN",
+   packageName : "free.vpn.unblock.proxy.turbovpn",
+   alternative:
+     [{
+       altName : "ProtonVPN",
+       link : "https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en"
+     }]
+   
+ }
+,
+{
+   name : "SHEIN",
+   packageName : "com.zzkko",
+   alternative:
+     [{
+       altName : "Tata CLiQ",
+       link : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
+     }]
+   
+ }
+,
+{
+   name : "BeautyPlus",
+   packageName : "com.commsource.beautyplus",
+   alternative:
+     [{
+       altName : "PicsArt",
+       link : "https://play.google.com/store/apps/details?id=com.picsart.studio&hl=en"
+     }]
+   
+ }
+,
+{
+   name : "Xender",
+   packageName : "cn.xender",
+   alternative:
+     [{
+        altName : "JioSwitch",
+       link : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
+     }]
+   
+ },
+  {
+   name : "Club Factory",
+   packageName : "club.fromfactory",
+   alternative: [{
+
+    altName : "Myntra",
+       link : "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en"
+     },
+ 
+    {
+         altName : "Tata CLiQ",
+       link : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
+     },
+   {
+      altName : "Flipkart",
+       link : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
+     }]
+   }
+
+]
