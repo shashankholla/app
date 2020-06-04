@@ -1,5 +1,14 @@
 [
+ {
+   "name" : "Zoom",
+   "packageName" : "us.zoom.videomeetings",
+   "alternative": [{
    
+       "altName" : "Cisco WebEx",
+       "link" : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+     }]
+   }
+ ,
 {
    "name" : "Uc browser",
    "packageName" : "com.UCMobile.intl",
@@ -10,7 +19,24 @@
      }]
    
  },
-  
+  {
+   "name" : "CamScanner",
+   "packageName" : "com.intsig.camscanner",
+   "alternative": [{
+   
+       "altName" : "Adobe Scan",
+       "link" : "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en_IN"
+     },
+ 
+    {
+       "altName" : "Scanner App To PDF - TapScanner",
+       "link" : "https://play.google.com/store/apps/details?id=pdf.tap.scanner&hl=en_IN"
+     },
+   {
+       "altName" : "Microsoft Office Lens",
+       "link" : "https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=en_IN"
+     }]
+   },
 {
    "name" : "TikTok",
    "packageName" : "com.zhiliaoapp.musically",
@@ -23,7 +49,7 @@
  },
 {
    "name" : "SHAREit",
-   "packageName" : "com.lenovo.anyshare.gps",
+   "packageName" : com.lenovo.anyshare.gps",
    "alternative":
      [{
        "altName" : "JioSwitch",
@@ -31,7 +57,16 @@
      }]
    
  },
- 
+{
+   "name" : "WPS Office",
+   "packageName" : "cn.wps.moffice_eng",
+   "alternative":
+     [{
+       "altName" : "Microsoft Office",
+       "link" : "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en"
+     }]
+   
+ },
 {
    "name" : "AliExpress",
    "packageName" : "com.alibaba.aliexpresshd",
@@ -55,7 +90,7 @@
  }
 ,
 {
-   "name" : "Turbo VPN",	
+   "name" : "Turbo VPN",
    "packageName" : "free.vpn.unblock.proxy.turbovpn",
    "alternative":
      [{
