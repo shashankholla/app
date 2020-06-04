@@ -1,152 +1,166 @@
-{"app":
+[
+ {
+   name : "Zoom",
+   packageName : "us.zoom.videomeetings",
+    appIcon : "https://lh3.googleusercontent.com/1DqxbUca62LmV1ehZirHGWYBef9Jrtl3DhZ4m6YBnWCUX-XNr3lcnYKb31R-7ukpKAw=s180-rw",
+   alternative:
  [{
-   "name" : "Zoom",
-   "packageName" : "us.zoom.videomeetings",
-   "alternative": [{
-       "altName" : "Cisco WebEx",
-       "link" : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+   
+       altName : "Cisco WebEx",
+       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN",
+        altAppIcon : "https://lh3.googleusercontent.com/_8joIrDlTdTZ1cKVVnMoQ9KG0i-A5LCZX8N3w0MmFljiIsV8T2jkcqhHWndrKs0ldGuX=s180-rw"
      }]
    }
  ,
-{
-   "name" : "Uc browser",
-   "packageName" : "com.UCMobile.intl",
-   "alternative":
-     [{
-       "altName" : "JioBrowser",
-       "link" : "https://play.google.com/store/apps/details?id=com.jio.web&hl=en"
-     }]
+ {
+   name : "Uc browser",
+   packageName : "com.UCMobile.intl",
+    appIcon : "https://lh3.googleusercontent.com/_tD09Sbmmcv4NwyqcL9oZhXxkMBV67qOkXwFg-swwH-mF2DELSMHeRSsYsbRS_IQeg=s180-rw",
+   alternative:
+ [{
    
- },
-  {
-   "name" : "CamScanner",
-   "packageName" : "com.intsig.camscanner",
-   "alternative": [{
-   
-       "altName" : "Adobe Scan",
-       "link" : "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en_IN"
-     },
- 
-    {
-       "altName" : "Scanner App To PDF - TapScanner",
-       "link" : "https://play.google.com/store/apps/details?id=pdf.tap.scanner&hl=en_IN"
-     },
-   {
-       "altName" : "Microsoft Office Lens",
-       "link" : "https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=en_IN"
+       altName : "JioBrowser",
+       link : "https://play.google.com/store/apps/details?id=com.jio.web&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/lvLnyyrrXakQr2IX00E4c9u1_mNWA6sasAHNgRGyWVuX9QMu0CrqBrqfmdf-NEw_FFE=s180-rw"
      }]
    },
-{
-   "name" : "TikTok",
-   "packageName" : "com.zhiliaoapp.musically",
-   "alternative":
-     [{
-       "altName" : "ShareChat",
-       "link" : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
-     }]
-   
- },
-{
-   "name" : "SHAREit",
-   "packageName" : "com.lenovo.anyshare.gps",
-"alternative":
-     [{
-       "altName" : "JioSwitch",
-       "link" : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
-     }]
-   
- },
-{
-   "name" : "WPS Office",
-   "packageName" : "cn.wps.moffice_eng",
-   "alternative":
-     [{
-       "altName" : "Microsoft Office",
-       "link" : "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en"
-     }]
-   
- },
-{
-   "name" : "AliExpress",
-   "packageName" : "com.alibaba.aliexpresshd",
-   "alternative":
-     [{
-       "altName" : "Flipkart",
-       "link" : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
-     }]
-   
- }
-,
-{
-   "name" : "Helo",
-   "packageName" : "app.buzz.share",
-   "alternative":
-     [{
-       "altName" : "ShareChat",
-       "link" : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en"
-     }]
-   
- }
-,
-{
-   "name" : "Turbo VPN",
-   "packageName" : "free.vpn.unblock.proxy.turbovpn",
-   "alternative":
-     [{
-       "altName" : "ProtonVPN",
-       "link" : "https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en"
-     }]
-   
- }
-,
-{
-   "name" : "SHEIN",
-   "packageName" : "com.zzkko",
-   "alternative":
-     [{
-       "altName" : "Tata CLiQ",
-       "link" : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
-     }]
-   
- }
-,
-{
-   "name" : "BeautyPlus",
-   "packageName" : "com.commsource.beautyplus",
-   "alternative":
-     [{
-       "altName" : "PicsArt",
-       "link" : "https://play.google.com/store/apps/details?id=com.picsart.studio&hl=en"
-     }]
-   
- }
-,
-{
-   "name" : "Xender",
-   "packageName" : "cn.xender",
-   "alternative":
-     [{
-        "altName" : "JioSwitch",
-       "link" : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
-     }]
-   
- },
-  {
-   "name" : "Club Factory",
-   "packageName" : "club.fromfactory",
-   "alternative": [{
-
-    "altName" : "Myntra",
-       "link" : "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en"
-     },
- 
-    {
-         "altName" : "Tata CLiQ",
-       "link" : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en"
-     },
    {
-      "altName" : "Flipkart",
-       "link" : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
+   name : "TikTok",
+   packageName : "com.zhiliaoapp.musically",
+    appIcon : "https://lh3.googleusercontent.com/TsPdiLBSCwQ_5tMNNTZElak9X4SBEgyQnK3q3hE99C2hbYMsov4dQK_FmRNyhf64wXpO=s180-rw",
+   alternative:
+ [{
+   
+       altName : "ShareChat",
+       link : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/hyZw-7vbTF2RKu9UTZa5SaPPH_m1NRfUDMj72ONs3QbbOz-WZvrEWcw_aGzgACXz0w=s180-rw"
      }]
-   }]
-}
+   }
+,
+ {
+   name : "SHAREit",
+   packageName : "com.lenovo.anyshare.gps",
+    appIcon : "https://lh3.googleusercontent.com/ysu5GolL__ix8gbLyrqdHgHE9QbLdxtTJyieI2vTmIQG6HABERb_7Abh48T1v1FXxRK8=s180-rw",
+   alternative:
+ [{
+   
+       altName : "JioSwitch",
+       link : "https://play.google.com/store/apps/details?id=com.reliance.jio.jioswitch&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
+     }]
+   }
+,
+ {
+   name : "CamScanner",
+   packageName : "com.intsig.camscanner",
+    appIcon : "https://lh3.googleusercontent.com/eWYNxjXiub6-HqtwoS2d4bl-NkqcKgOHansSnXXqje8-K9XLRwflOgEYwSzPMicdAA=s180-rw",
+   alternative:
+ [{
+   
+       altName : "Adobe Scan",
+       link : "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/VfzEt_p5VsWVUWThiy9_iia6-conkFN_UOCvC_NGEbD5542Mx8iWULBBH02ONenZnA=s180-rw"
+     }]
+   }
+,
+ {
+   name : "WPS Office",
+   packageName : "cn.wps.moffice_eng",
+    appIcon : "https://lh3.googleusercontent.com/7-CBOICJrtltP-Ndzq-c8Vugt1FTsy2vw-SZUZ5ov0BY7XgDrVeltTwtyhjVbxh943M=s180-rw",
+   alternative:
+ [{
+   
+       altName : "Microsoft Office",
+       link : "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/D6XDCje7pB0nNP1sOZkwD-tXkV0_As3ni21us5yZ71_sy0FTWv1s_MQBe1JUnHlgE94=s180-rw"
+     }]
+   }
+,
+ {
+   name : "AliExpress",
+   packageName : "com.alibaba.aliexpresshd",
+    appIcon : "https://lh3.googleusercontent.com/8XePOjdAbTm12TJ4Cu3-DnQxT7kG-ptsu6yqXMusO5nbCs1s9GeVPwDMqMAMi4rxTYSV=s180-rw",
+   alternative:
+ [{
+   
+       altName : "Flipkart",
+       link : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/q8hxnbpJCYfHipSOG_5tZe5jK_89T6QIsqrEklvGpMFKH8b98pDHJf2tPcn2bxEN96ON=s180-rw"
+     }]
+   }
+,
+ {
+   name : "Helo",
+   packageName : "app.buzz.share",
+    appIcon : "https://lh3.googleusercontent.com/IMqNimCM2_Ngs5pWgJ3zttRRvIDlVc47mXXaRF7AA1XTW9c5TkWQEOdu3eeU7v7rOZU=s180-rw",
+   alternative:
+ [{
+   altName : "ShareChat",
+       link : "https://play.google.com/store/apps/details?id=in.mohalla.sharechat&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/hyZw-7vbTF2RKu9UTZa5SaPPH_m1NRfUDMj72ONs3QbbOz-WZvrEWcw_aGzgACXz0w=s180-rw"
+     }]
+   }
+,
+ {
+   name : "Xender",
+   packageName : "cn.xender",
+    appIcon : "https://lh3.googleusercontent.com/y-jJBrUkvzwB2FsovKYjPl1TTIQ8eNl7__w3Waony71rjKqWmy1WxGZK47KuafZygQ=s180-rw",
+   alternative:
+ [{
+   
+       altName : "JioSwitch",
+       link : "https://play.google.com/store/apps/details?id=com.reliance.jio.jioswitch&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/N3UWIAEcUzQCivUw2Nsn97i3ZlLNi5ycIu6EDYE8wy052QVaxKb6uNqhf9NGPq4tOU8=s180-rw"
+     }]
+   }
+,
+ {
+   name : "Turbo VPN",
+   packageName : "free.vpn.unblock.proxy.turbovpn",
+    appIcon : "https://lh3.googleusercontent.com/G7AkY7FY1XZQU8Xp_h5OGGovDxySJ2tLSlPxNRfl9E3lKDzyqY-2QYByz3CHovWRcg=s180-rw",
+   alternative:
+ [{
+   
+       altName : "ProtonVPN",
+       link : "https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/GQ-BQAkTZUZCX76yz77b2tSR4cIjxdjKdmsECcJEFuv299cr5U3BH91dCv-3Qx4Wba0=s180-rw"
+     }]
+   }
+,
+ {
+   name : "Club Factory",
+   packageName : "club.fromfactory",
+    appIcon : "https://lh3.googleusercontent.com/ktwTe8JTsoJ7K6Is7Xz7nFdTBAUGTGrKbE1y6OtOIbGFmZrrhHDSNt_sGgpuscTJcYY=s180-rw",
+   alternative:
+ [{
+   
+       altName : "Myntra",
+       link : "https://play.google.com/store/apps/details?id=com.myntra.android&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/G87iT9dhwxwtgl5UA8SIqwp7I0GTlItyuR5mNL7vUOgP2SN8JyXigaiOpxKRaCXI22w=s180-rw"
+     }]
+   },
+ {
+   name : "SHEIN",
+   packageName : "com.zzkko",
+    appIcon : "https://lh3.googleusercontent.com/99kIOo2NkDRAwBGQRfcq8-RP9x4PRKSxXlhiK519nxKF5ikbKhXdtgUrRI3UaSPTSwo=s180-rw",
+   alternative:
+ [{
+   
+       altName : "Tata CLiQ",
+       link : "https://play.google.com/store/apps/details?id=com.tul.tatacliq&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/YYMB0q3VZuH1cegb-s636R6p4cIPivJ-4BMn04ogVWfw1l0JrJSFYZ2xvcjsPEWY5ro=s180-rw"
+     }]
+   },
+ {
+   name : "BeautyPlus",
+   packageName : "com.commsource.beautyplus",
+    appIcon : "https://lh3.googleusercontent.com/evc-4ioGfX6VPYNCMAJCNi4FH4cDMB_JZKHS6nivPb1mzektPYEmPbRSdp5osq9HAzA=s180-rw",
+   alternative:
+ [{
+   
+       altName : "PicsArt",
+       link : "https://play.google.com/store/apps/details?id=com.picsart.studio&hl=en",
+        altAppIcon : "https://lh3.googleusercontent.com/RWA6sukKt4Yk3_xqM7XsK2kgjN5weHPW9LQ1FRivexcGeGKrCGb1i2ZrxC6HLAw3sI8=s180-rw"
+     }]
+   }
+]
