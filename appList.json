@@ -1,13 +1,5 @@
 [
- {
-   name : "Zoom",
-   packageName : "us.zoom.videomeetings",
-   alternative: [{
-   
-       altName : "Cisco WebEx",
-       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
-     }]
-   }
+  
  ,
 {
    name : "Uc browser",
@@ -19,24 +11,7 @@
      }]
    
  },
-  {
-   name : "CamScanner",
-   packageName : "com.intsig.camscanner",
-   alternative: [{
-   
-       altName : "Adobe Scan",
-       link : "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en_IN"
-     },
- 
-    {
-       altName : "Scanner App To PDF - TapScanner",
-       link : "https://play.google.com/store/apps/details?id=pdf.tap.scanner&hl=en_IN"
-     },
-   {
-       altName : "Microsoft Office Lens",
-       link : "https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=en_IN"
-     }]
-   },
+  
 {
    name : "TikTok",
    packageName : "com.zhiliaoapp.musically",
@@ -57,16 +32,7 @@
      }]
    
  },
-{
-   name : "WPS Office",
-   packageName : "cn.wps.moffice_eng",
-   alternative:
-     [{
-       altName : "Microsoft Office",
-       link : "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow&hl=en"
-     }]
-   
- },
+ 
 {
    name : "AliExpress",
    packageName : "com.alibaba.aliexpresshd",
