@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chinese apps alternative</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Share</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="otherapps" translatable="false">Other apps by SHAR</string>
+</resources>

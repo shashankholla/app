@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/circlemenu"
+        android:title="Your Apps"
+        android:checked="true"
+        android:iconTint="@color/menu"/>
+
+    <item
+        android:id="@+id/appList"
+        android:icon="@drawable/tabmenu"
+        android:title="Suggested Apps"
+        android:iconTint="@color/endColor"/>
+</menu>

@@ -1,0 +1,40 @@
+[
+ {
+   name : "Zoom",
+   packageName : "us.zoom.videomeetings",
+   alternative: [{
+    
+       altName : "Cisco WebEx",
+       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+     }]
+   }
+ ,
+{
+   name : "Telegram",
+   packageName : "org.telegram.messenger",
+   alternative: 
+     [{
+       altName : "Cisco WebEx",
+       link : "https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_IN"
+     }]
+   
+ },
+  {
+   name : "CamScanner",
+   packageName : "com.intsig.camscanner",
+   alternative: [{
+    
+       altName : "Adobe Scan",
+       link : "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en_IN"
+     },
+
+    {
+       altName : "Scanner App To PDF - TapScanner",
+       link : "https://play.google.com/store/apps/details?id=pdf.tap.scanner&hl=en_IN"
+     },
+   {
+       altName : "Microsoft Office Lens",
+       link : "https://play.google.com/store/apps/details?id=com.microsoft.office.officelens&hl=en_IN"
+     }]
+   }
+]
