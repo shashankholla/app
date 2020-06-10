@@ -190,5 +190,15 @@
 				"link" : "https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
 			}
 		]
+	},
+{
+		"name" : "App Lock",
+		"packageName" : "com.jiubang.alock",
+		"alternative" : [
+			{
+				"altName" : "Norton App Lock",
+				"link" : "https://play.google.com/store/apps/details?id=com.symantec.applock&hl=en_US"
+			}
+		]
 	}
 ]
