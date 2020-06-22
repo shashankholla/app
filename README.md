@@ -6,4 +6,6 @@
 
 Simple android app that fetches a list of apps from a defined list hosted on github, and compares it with the apps installed on your phone. It then suggests alternate apps with similar functionality.
 
-![](images\screenshot.jpg)
+<p align="center">
+  <img width="200" src="images/screenshot.jpg" />
+</p>
