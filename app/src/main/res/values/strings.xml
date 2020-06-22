@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Chinese apps alternative</string>
+    <string name="app_name">Apps alternatives</string>
     <string name="sharPlaystoreUrl">https://play.google.com/store/apps/developer?id=SHAR&amp;hl=en</string>
     <string name="appListJsonUrl">https://raw.githubusercontent.com/shashankholla/app/master/appList.json</string>
     <string name="suggestedListJsonUrl">https://raw.githubusercontent.com/shashankholla/app/master/suggestedApps.json</string>
