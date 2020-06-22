@@ -3,38 +3,29 @@ package com.example.myalternative;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
+
 import android.net.Uri;
-import android.os.Build;
-import android.transition.AutoTransition;
-import android.transition.TransitionManager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
+
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class homeListAdapter extends RecyclerView.Adapter<homeListAdapter.View_Holder> {
-    List<AltApp> mApps = Collections.emptyList();
+    List<AltApp> mApps;
     Context mContext;
     View.OnClickListener mClickListener;
     RecyclerView rv;
@@ -55,8 +46,6 @@ public class homeListAdapter extends RecyclerView.Adapter<homeListAdapter.View_H
     public View_Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cards_layout, parent, false);
         final View_Holder viewHolder = new View_Holder(v);
-
-
         return viewHolder;
     }
 
@@ -73,8 +62,6 @@ public class homeListAdapter extends RecyclerView.Adapter<homeListAdapter.View_H
         });
         Glide.with(mContext).load(a.theAppIcon).placeholder(R.drawable.ic_apps_black_24dp).into(holder.theAppIcon);
         Glide.with(mContext).load(a.altAppIcon).placeholder(R.drawable.ic_apps_black_24dp).into(holder.altAppIcon);
-
-
     }
 
     @Override
@@ -96,7 +83,6 @@ public class homeListAdapter extends RecyclerView.Adapter<homeListAdapter.View_H
             theAppIcon = itemView.findViewById(R.id.theAppImage);
             altAppIcon = itemView.findViewById(R.id.altAppImg);
             btn = itemView.findViewById(R.id.button1);
-
         }
     }
 }

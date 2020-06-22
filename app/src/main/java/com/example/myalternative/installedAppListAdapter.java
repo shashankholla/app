@@ -33,7 +33,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class installedAppListAdapter extends RecyclerView.Adapter<installedAppListAdapter.View_Holder> {
-    List<App> mApps = Collections.emptyList();
+    List<App> mApps;
     Context mContext;
     View.OnClickListener mClickListener;
     RecyclerView rv;
@@ -59,11 +59,14 @@ public class installedAppListAdapter extends RecyclerView.Adapter<installedAppLi
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //card not expanded
                 if(viewHolder.constraintLayout.getVisibility() == View.GONE){
+
                     TransitionManager.beginDelayedTransition(viewHolder.cv, new AutoTransition());
                     viewHolder.constraintLayout.setVisibility(View.VISIBLE);
                     viewHolder.expandBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_keyboard_arrow_up_black_24dp, 0, 0, 0);
                 }
+                //card expanded
                 else{
                     TransitionManager.beginDelayedTransition(rv, new AutoTransition());
                     viewHolder.constraintLayout.setVisibility(View.GONE);
@@ -122,12 +125,9 @@ public class installedAppListAdapter extends RecyclerView.Adapter<installedAppLi
                     mContext.startActivity(intent);
 
                 } catch ( ActivityNotFoundException e ) {
-                    //e.printStackTrace();
-
                     //Open the generic Apps page:
                     Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_APPLICATIONS_SETTINGS);
                     mContext.startActivity(intent);
-
                 }
             }
         });
@@ -151,10 +151,10 @@ public class installedAppListAdapter extends RecyclerView.Adapter<installedAppLi
         Button infoBtn;
         View_Holder(View itemView) {
             super(itemView);
-            cv = (CardView) itemView.findViewById(R.id.cardView);
-            title = (TextView) itemView.findViewById(R.id.appName);
-            description = (TextView) itemView.findViewById(R.id.description);
-            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            cv = itemView.findViewById(R.id.cardView);
+            title = itemView.findViewById(R.id.appName);
+            description = itemView.findViewById(R.id.description);
+            imageView = itemView.findViewById(R.id.imageView);
             constraintLayout = itemView.findViewById(R.id.expandableView);
             expandBtn = itemView.findViewById(R.id.expandBtn);
             altAppRV = itemView.findViewById(R.id.altAppsRV);
@@ -164,6 +164,6 @@ public class installedAppListAdapter extends RecyclerView.Adapter<installedAppLi
     }
 
     public interface showNoApps{
-        public void showNoAppsMethod();
+        void showNoAppsMethod();
     }
 }

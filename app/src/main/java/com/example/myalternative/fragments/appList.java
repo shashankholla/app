@@ -42,26 +42,17 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link appList#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class appList extends Fragment implements AsyncResponse, installedAppListAdapter.showNoApps {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     AlertDialog dialog;
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    TextView tv;
-    List<ResolveInfo> pkgAppsList;
     List<App> myApps = new ArrayList<App>();
     JsonTask asyncTask = new JsonTask();
     RecyclerView recyclerView;
@@ -70,18 +61,9 @@ public class appList extends Fragment implements AsyncResponse, installedAppList
     TextView noApps;
 
     public appList() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment appList.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static appList newInstance(String param1, String param2) {
         appList fragment = new appList();
         Bundle args = new Bundle();
@@ -99,7 +81,7 @@ public class appList extends Fragment implements AsyncResponse, installedAppList
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        progressDialog = ProgressDialog.show(getActivity(), "Loading", "Please wait... This might take longer if you have more apps.", true);
+        progressDialog = ProgressDialog.show(getActivity(), getString(R.string.loadingProgressDialogTitle), getString(R.string.loadingProgressDialogDesc), true);
 
     }
 
@@ -154,7 +136,7 @@ public class appList extends Fragment implements AsyncResponse, installedAppList
             }
 
         }
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
+        recyclerView = rootView.findViewById(R.id.recyclerview);
         installedAppListAdapter adapter = new installedAppListAdapter(visibleApps, getActivity(), recyclerView, jsonObject, this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -163,10 +145,7 @@ public class appList extends Fragment implements AsyncResponse, installedAppList
 
     public boolean hasNetwork(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected()) {
-            return true;
-        }
-        return false;
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
     }
 
     @Override
@@ -184,10 +163,10 @@ public class appList extends Fragment implements AsyncResponse, installedAppList
             HttpURLConnection connection = null;
             URL url;
             try {
-                url = new URL("https://raw.githubusercontent.com/shashankholla/app/master/appList.json");
+                url = new URL(getString(R.string.appListJsonUrl));
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
-                BufferedReader bReader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "utf-8"), 8);
+                BufferedReader bReader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8), 8);
                 StringBuilder sBuilder = new StringBuilder();
                 String line = null;
                 while ((line = bReader.readLine()) != null) {
@@ -259,7 +238,7 @@ public class appList extends Fragment implements AsyncResponse, installedAppList
 
             @Override
             public void onShow(DialogInterface dialogInterface) {
-                Button button = ((AlertDialog) dialog).getButton(AlertDialog.BUTTON_POSITIVE);
+                Button button = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 button.setOnClickListener(new View.OnClickListener() {
 
                     @Override

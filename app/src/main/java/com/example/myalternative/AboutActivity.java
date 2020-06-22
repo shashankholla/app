@@ -14,8 +14,8 @@ import android.widget.Toast;
 import java.util.Calendar;
 import android.net.Uri;
 
-public class SecondActivity extends AppCompatActivity {
-    private static final String PLAYSTORE_URL = "https://play.google.com/store/apps/developer?id=SHAR&hl=en";
+public class AboutActivity extends AppCompatActivity {
+    private final String PLAYSTORE_URL = getString(R.string.sharPlaystoreUrl);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +51,7 @@ public class SecondActivity extends AppCompatActivity {
         copyRightsElement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SecondActivity.this, copyrights, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AboutActivity.this, copyrights, Toast.LENGTH_SHORT).show();
             }
         });
         return copyRightsElement;

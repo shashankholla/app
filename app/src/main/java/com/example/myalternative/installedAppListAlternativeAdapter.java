@@ -7,31 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.Collections;
 import java.util.List;
 
 public class installedAppListAlternativeAdapter extends RecyclerView.Adapter<installedAppListAlternativeAdapter.VH> {
-    List<App> mApps = Collections.emptyList();
+    List<App> mApps;
     Context mContext;
-    View.OnClickListener mClickListener;
 
     public installedAppListAlternativeAdapter(List<App> apps, Context context){
         this.mApps = apps;
         this.mContext = context;
-
     }
-
 
     @NonNull
     @Override
@@ -56,9 +46,7 @@ public class installedAppListAlternativeAdapter extends RecyclerView.Adapter<ins
 
     @Override
     public void onBindViewHolder(@NonNull VH holder, int position) {
-
         holder.title.setText(mApps.get(position).appName);
-
     }
 
     @Override
@@ -67,16 +55,12 @@ public class installedAppListAlternativeAdapter extends RecyclerView.Adapter<ins
     }
 
     public class VH extends RecyclerView.ViewHolder {
-
-
         TextView title;
-
         Button launchBtn;
         RelativeLayout altAppRel;
-
         VH(View itemView) {
             super(itemView);
-            title = (TextView) itemView.findViewById(R.id.altAppName);
+            title = itemView.findViewById(R.id.altAppName);
             launchBtn = itemView.findViewById(R.id.launchPlaystore);
             altAppRel = itemView.findViewById(R.id.altAppRel);
         }

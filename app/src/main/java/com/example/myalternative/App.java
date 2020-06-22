@@ -2,7 +2,7 @@ package com.example.myalternative;
 
 import android.graphics.drawable.Drawable;
 
-import java.net.URL;
+
 
 public class App {
     public String appName;

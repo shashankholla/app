@@ -1,38 +1,25 @@
 package com.example.myalternative.fragments;
 
-import android.app.ProgressDialog;
-
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
-
 import com.example.myalternative.AltApp;
-import com.example.myalternative.App;
 import com.example.myalternative.AsyncResponse;
-
-
 import com.example.myalternative.R;
 import com.example.myalternative.homeListAdapter;
-import com.example.myalternative.installedAppListAdapter;
 import com.example.myalternative.pojoApp;
 import com.google.gson.Gson;
 
@@ -42,45 +29,24 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link appList#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class homeFragment extends Fragment implements AsyncResponse {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    TextView tv;
-    List<ResolveInfo> pkgAppsList;
-    List<App> myApps = new ArrayList<App>();
     JsonTask asyncTask = new JsonTask();
     RecyclerView recyclerView;
     ViewGroup rootView;
-    ProgressDialog progressDialog;
 
     public homeFragment() {
-        // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment appList.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static appList newInstance(String param1, String param2) {
         appList fragment = new appList();
         Bundle args = new Bundle();
@@ -98,8 +64,6 @@ public class homeFragment extends Fragment implements AsyncResponse {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-
     }
 
 
@@ -111,14 +75,12 @@ public class homeFragment extends Fragment implements AsyncResponse {
         for (pojoApp p : jsonObject) {
             visibleApps.add(new AltApp(p.name, p.altAppName(), p.altAppLink(), p.appIcon, p.altAppIcon()));
         }
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
+        recyclerView = rootView.findViewById(R.id.recyclerview);
         homeListAdapter adapter = new homeListAdapter(visibleApps, getActivity(), recyclerView, jsonObject);
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
     }
-
 
     private class JsonTask extends AsyncTask<String, String, String> {
         public AsyncResponse delegate = null;
@@ -129,10 +91,10 @@ public class homeFragment extends Fragment implements AsyncResponse {
             HttpURLConnection connection = null;
             URL url;
             try {
-                url = new URL("https://raw.githubusercontent.com/shashankholla/app/master/suggestedApps.json");
+                url = new URL(getString(R.string.suggestedListJsonUrl));
                 connection = (HttpURLConnection) url.openConnection();
                 connection.connect();
-                BufferedReader bReader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "utf-8"), 8);
+                BufferedReader bReader = new BufferedReader(new InputStreamReader(connection.getInputStream(), StandardCharsets.UTF_8), 8);
                 StringBuilder sBuilder = new StringBuilder();
                 String line = null;
                 while ((line = bReader.readLine()) != null) {
@@ -165,7 +127,6 @@ public class homeFragment extends Fragment implements AsyncResponse {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_app_list, container, false);
 
@@ -200,15 +161,11 @@ public class homeFragment extends Fragment implements AsyncResponse {
     }
 
     private class CheckOnlineStatus extends AsyncTask<Void, Integer, Boolean> {
-
-
         @Override
         protected Boolean doInBackground(Void... params) {
-            //This is a background thread, when it finishes executing will return the result from your function.
             while(!hasNetwork(getContext()));
             return true;
         }
-
         protected void onPostExecute(Boolean result) {
           startNetworkTask();
         }
@@ -216,10 +173,6 @@ public class homeFragment extends Fragment implements AsyncResponse {
 
     public boolean hasNetwork(Context context){
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        if(cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected()){
-            return true;
-        }
-
-        return false;
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
     }
 }

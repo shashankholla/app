@@ -1,9 +1,21 @@
 <resources>
     <string name="app_name">Chinese apps alternative</string>
+    <string name="sharPlaystoreUrl">https://play.google.com/store/apps/developer?id=SHAR&amp;hl=en</string>
+    <string name="appListJsonUrl">https://raw.githubusercontent.com/shashankholla/app/master/appList.json</string>
+    <string name="suggestedListJsonUrl">https://raw.githubusercontent.com/shashankholla/app/master/suggestedApps.json</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="share">Share</string>
     <string name="copy_right" translatable="false">Copyrights © %1$d</string>
     <string name="otherapps" translatable="false">Other apps by SHAR</string>
+    <string name="tutorialPage1Title" translatable="true">Hey there,Get rid of Chinese Apps</string>
+    <string name="tutorialPage1Desc" translatable="true">Click the arrow button to find out all the chinese apps in your phone and we will show you alternative apps for these</string>
+    <string name="tutorialPage2Title" translatable="true">Here you go,all alternative apps for chinese apps</string>
+    <string name="tutorialPage2Desc" translatable="true">Its that simple,Let\'s get started!</string>
+
+    <string name="loadingProgressDialogTitle">Loading</string>
+    <string name="loadingProgressDialogDesc">Please wait... This might take longer if you have more apps.</string>
+
+
 </resources>

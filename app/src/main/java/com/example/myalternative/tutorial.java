@@ -19,18 +19,14 @@ public class tutorial extends AppIntro {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addSlide(AppIntroFragment.newInstance(
-
-                "Hey there,Get rid of Chinese Apps",
-               "Click the arrow button to find out all the chinese apps in your phone and we will show you alternative apps for these",
+                getString(R.string.tutorialPage1Title),
+                getString(R.string.tutorialPage1Desc),
                 R.drawable.three,
                 R.color.white
-
-
-
         ));
         addSlide(AppIntroFragment.newInstance(
-                "Here you go,all alternative apps for chinese apps",
-                "Its that simple,Let's get started!",
+                getString(R.string.tutorialPage2Title),
+                getString(R.string.tutorialPage2Desc),
                 R.drawable.intro,
                 R.color.white
 
@@ -42,17 +38,14 @@ public class tutorial extends AppIntro {
         sharedPreferencesEditor.putBoolean(
                 "firstRun", false);
         sharedPreferencesEditor.apply();
-
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
     }
-
     @Override
     protected void onDonePressed(@Nullable Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-
         updateSharedPref();
         finish();
     }
@@ -61,7 +54,6 @@ public class tutorial extends AppIntro {
     protected void onSkipPressed(@Nullable Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
         updateSharedPref();
-
         finish();
     }
 }

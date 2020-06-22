@@ -1,13 +1,10 @@
 package com.example.myalternative;
 
-
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
-import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -15,10 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.solver.Cache;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -30,25 +25,20 @@ import com.example.myalternative.fragments.homeFragment;
 import com.fxn.BubbleTabBar;
 import com.fxn.OnBubbleClickListener;
 
-
-// https://pastebin.com/CaU6VSBj
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "INFO";
     BubbleTabBar bubbleTabBar;
     private ViewPager mPager;
-
     private PagerAdapter pagerAdapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
         setTitle("");
-        setStatusBarGradiant(this);
+        setStatusBarGradient(this);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
         if (sharedPreferences.getBoolean(
@@ -56,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
             // The user hasn't seen the OnboardingSupportFragment yet, so show it
             startActivity(new Intent(this, tutorial.class));
         }
-        mPager = (ViewPager) findViewById(R.id.pager);
+
+        mPager = findViewById(R.id.pager);
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(pagerAdapter);
         bubbleTabBar = findViewById(R.id.bubbleTabBar);
@@ -75,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         bubbleTabBar.setupBubbleTabBar(mPager);
-
-
 
     }
 
@@ -102,9 +91,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public static void setStatusBarGradiant(Activity activity) {
+    public static void setStatusBarGradient(Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = activity.getWindow();
             Drawable background = activity.getResources().getDrawable(R.drawable.background_bg);
@@ -116,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -125,14 +112,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.new_activity) {
-            Intent intent = new Intent(this, SecondActivity.class);
+            Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }
 
